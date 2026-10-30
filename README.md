@@ -211,7 +211,7 @@ Verified that correct network configuration, DNS settings, and firewall rules ar
 ### Screenshots
 screenshots showing the network configuration and connectivity tests for each VM.
 ![Kali To Windows Connectivity](screenshots/12-windows10-ip-conf-connectivity-test.png)
-![Kali To Android Connectivity](screenshots/13-android-ip-conf-connectivity-test.pn)
+![Kali To Android Connectivity](screenshots/13-android-ip-conf-connectivity-test.png)
 
 ## 🎯 Learning Outcomes
 
