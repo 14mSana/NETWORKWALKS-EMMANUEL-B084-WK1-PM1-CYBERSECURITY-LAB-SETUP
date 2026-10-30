@@ -2,7 +2,7 @@
 
 ![Platform](https://img.shields.io/badge/Platform-Kali%20Linux-blue)
 ![Focus](https://img.shields.io/badge/Focus-Network%20Configuration-green)
-![Status](https://img.shields.io/badge/Status-In%20Progress-orange)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
 ## 📌 Project Overview
 
@@ -223,7 +223,21 @@ screenshots showing the network configuration and connectivity tests for each VM
 - **Snapshot Management:** Created a clean VM snapshot for recovery and safe experimentation.
 - **Cybersecurity Lab Setup:** Built a multi-OS environment for future network scanning, traffic analysis, and security testing.
 - **Documentation:** Documented configurations, troubleshooting steps, and test results using GitHub.
+  
+## 🛠️ Tools and Resources
 
+### Tools Used
+- **Oracle VirtualBox:** Virtualization and VM management.
+- **Kali Linux:** Cybersecurity testing and network analysis.
+- **Windows 10:** Target VM for connectivity testing.
+- **Android-x86:** Mobile operating system testing in a virtual environment.
+
+### Resources
+- [Kali Linux](https://kali.org/get-kali)
+- [Oracle VirtualBox](https://virtualbox.org/wiki/Downloads)
+- [Android-x86](https://www.android-x86.org/download)
+- [Windows 10](https://www.microsoft.com/en-in/software-download/windows10)
+  
 ## 👤 Author
 
 **Sanvir Kaur**  
