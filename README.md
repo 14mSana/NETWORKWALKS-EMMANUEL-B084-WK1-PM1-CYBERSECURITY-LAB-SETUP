@@ -63,7 +63,7 @@ This laboratory is intended strictly for educational purposes and authorized sec
 | 🧠 Allocated Kali RAM | 4096 MB (4 GB) |
 | 🌐 Virtual Network Mode | NAT Network |
 
-### Network Configuration
+### Initial Kali Network Settings
 
 | Component | Configuration |
 |---|---|
@@ -158,31 +158,6 @@ A VirtualBox snapshot was created after the initial Kali Linux configuration.
 ![Snapshot](screenshots/11-snapshot.png)
 This snapshot serves as a clean baseline, allowing the VM to be restored if future lab exercises affect its configuration.
 
-## 📸 Screenshots
-
-The `screenshots/` directory contains evidence collected during the lab setup and verification process.
-
-The screenshots document the actual system configuration and the results of the tests performed.
-
-## 🔍 Troubleshooting: DNS Configuration
-
-### Issue Encountered
-
-During the network configuration process, I encountered an issue while attempting to use `10.0.0.1` as the DNS server. The DNS query returned a connection-refused error.
-
-### Investigation
-
-I tested an alternative DNS server, `8.8.8.8`, to determine whether DNS resolution would work through a different resolver.
-
-The query to `8.8.8.8` successfully returned the requested name and address, indicating that the alternative DNS server was responding to the DNS query.
-
-### Resolution
-
-I changed the DNS server configuration to use Google's public DNS server:
-
-- **Previously tested DNS server:** `10.0.0.1`
-- **DNS server selected:** `8.8.8.8`
-- **Observed result:** DNS resolution succeeded using `8.8.8.8`
   
 ## 🖥️ Extended Virtual Lab Environment
 
@@ -202,24 +177,53 @@ As an extension of the initial Kali Linux setup, Windows 10 and Android virtual 
 - Verify IP address assignments.
 - Test connectivity between virtual machines.
 - Build a multi-OS environment for future cybersecurity labs.
+  
+## 🔧 Troubleshooting
+
+### 1. DNS Configuration
+- **Issue:** DNS queries to `10.0.0.1` were unsuccessful.
+- **Solution:** Configured Google Public DNS (`8.8.8.8`) and verified DNS resolution.
+
+### 2. Windows 10 Connectivity
+- **Issue:** Kali Linux could not ping the Windows 10 VM.
+- **Troubleshooting:** Checked the NAT Network configuration, IP addresses, and Windows Firewall settings.
+
+### 3. Android Network Configuration
+- **Issue:** Required network configuration and connectivity verification.
+- **Solution:** Configured the Android VM to use the same NAT Network and checked its IP settings.
+
+## 🖥️ VM Connectivity Details
+
+All three virtual machines are connected to the same VirtualBox NAT Network.
+
+| Configuration | Kali Linux | Windows 10 | Android |
+|---|---|---|---|
+| Operating System | Kali Linux 2026.3 | Windows 10 | Android-x86 |
+| Network Mode | NAT Network | NAT Network | NAT Network |
+| Network Address | `10.0.0.0/24` | `10.0.0.0/24` | `10.0.0.0/24` |
+| IPv4 Address | `10.0.0.2` | `10.0.0.10` | `10.0.0.9` |
+| Default Gateway | `10.0.0.1` | `10.0.0.1` | `10.0.0.1` |
+| DNS Server | `8.8.8.8` | `8.8.8.8` | `8.8.8.8` |
+
+### Key Learning
+Verified that correct network configuration, DNS settings, and firewall rules are essential for communication between virtual machines.
 
 ### Screenshots
 screenshots showing the network configuration and connectivity tests for each VM.
+![Kali To Windows Connectivity](screenshots/12-windows10-ip-conf-connectivity-test.png)
+![Kali To Android Connectivity](screenshots/13-android-ip-conf-connectivity-test.pn)
 
-## 📚 Learning Outcomes
+## 🎯 Learning Outcomes
 
-Through this project, I aim to strengthen my understanding of:
+- **Virtualization:** Installed and managed multiple operating systems using VirtualBox.
+- **Network Configuration:** Configured a shared NAT Network for Kali Linux, Windows 10, and Android VMs.
+- **IP Addressing:** Learned IP configuration, default gateways, and DNS settings.
+- **Connectivity Testing:** Practiced testing network connectivity between virtual machines.
+- **Troubleshooting:** Identified and resolved network configuration and DNS issues.
+- **Snapshot Management:** Created a clean VM snapshot for recovery and safe experimentation.
+- **Cybersecurity Lab Setup:** Built a multi-OS environment for future network scanning, traffic analysis, and security testing.
+- **Documentation:** Documented configurations, troubleshooting steps, and test results using GitHub.
 
-- Linux network configuration.
-- IPv4 addressing and subnet masks.
-- Routing tables and default gateways.
-- DNS resolution.
-- Basic network connectivity testing.
-- Technical documentation and troubleshooting.
-
-## 🔐 Responsible Use
-
-This environment is intended for cybersecurity education and authorized testing. Any future security testing will be limited to systems I own or have explicit permission to assess.
 
 ## 👤 Author
 
