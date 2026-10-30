@@ -224,7 +224,13 @@ screenshots showing the network configuration and connectivity tests for each VM
 - **Cybersecurity Lab Setup:** Built a multi-OS environment for future network scanning, traffic analysis, and security testing.
 - **Documentation:** Documented configurations, troubleshooting steps, and test results using GitHub.
 
-
 ## 👤 Author
 
-**GitHub:** [14mSana](https://github.com/14mSana)
+**Sanvir Kaur**  
+B.Tech Student | Cybersecurity & Blockchain
+
+Interested in cybersecurity, network security, and ethical hacking. This project documents my hands-on learning experience in virtual machine configuration, networking, and cybersecurity lab development.
+
+- **GitHub:** [14mSana](https://github.com/14mSana)
+- **LinkedIn:** [Connect with me](https://www.linkedin.com/in/sanvir-kaur-86968739b/)
+- **TryHackMe:** [View my profile](https://tryhackme.com/p/sanvir)
