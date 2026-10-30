@@ -155,7 +155,7 @@ getent hosts google.com
 A VirtualBox snapshot was created after the initial Kali Linux configuration.
 
 **Snapshot Name:** `Clean Kali - Network Setup`
-
+![Snapshot](screenshots/11-snapshot.png)
 This snapshot serves as a clean baseline, allowing the VM to be restored if future lab exercises affect its configuration.
 
 ## 📸 Screenshots
@@ -183,6 +183,28 @@ I changed the DNS server configuration to use Google's public DNS server:
 - **Previously tested DNS server:** `10.0.0.1`
 - **DNS server selected:** `8.8.8.8`
 - **Observed result:** DNS resolution succeeded using `8.8.8.8`
+  
+## 🖥️ Extended Virtual Lab Environment
+
+As an extension of the initial Kali Linux setup, Windows 10 and Android virtual machines were installed in VirtualBox and connected to the same NAT Network.
+
+### Virtual Machines
+
+| Virtual Machine | Purpose | Network |
+|---|---|---|
+| Kali Linux | Security testing and network analysis | NAT Network |
+| Windows 10 | Target machine for connectivity and security testing | NAT Network |
+| Android | Mobile environment for connectivity testing | NAT Network |
+
+### Objectives
+
+- Configure all three VMs on the same virtual network.
+- Verify IP address assignments.
+- Test connectivity between virtual machines.
+- Build a multi-OS environment for future cybersecurity labs.
+
+### Screenshots
+screenshots showing the network configuration and connectivity tests for each VM.
 
 ## 📚 Learning Outcomes
 
